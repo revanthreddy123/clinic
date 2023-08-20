@@ -1,0 +1,128 @@
+@media screen and (min-width: 320px)  and (max-width: 768px)
+{
+
+   	.logo-img1{margin:3px; float:left; z-index:99999; /*position:absolute;*/ padding-top: -50px; margin-top: -0px !important; }
+	.logo-text{ font-size:20px; font-family: Roboto, sans-serif; float:left; position:absolute; color:#a12d33; z-index:99999; margin:4% 0 0 18%; 
+	 text-shadow:1px 1px 2px #000; -webkit- text-shadow:1px 1px 2px #000; -moz- text-shadow:1px 1px 2px #000;}
+	 
+
+    .menu-icon{ float:right; margin:10px;padding:10px 20px; color:#fff; background:#333; cursor:pointer;}
+    #menuToggle{ display:none;}
+    #menuToggle:checked ~ .menu{ position:absolute; top:58px; left:0;}
+
+    .menu{background:#333; width:100%; height:auto; position:absolute; top:-250px; z-index:999999;}
+nav { float:left; width:100%;}
+nav li{ list-style:none; background:#333; width:100%; min-width:320px; margin:auto;  position:relative;  }
+nav li .active{ border-bottom:2px solid #C1272D;}
+nav li a{ display:block; padding:5px;text-decoration:none; margin:auto;  color:#fff;}
+nav li a:hover{  color:#fff;  }
+
+nav li ul{ display:none;}
+nav li:hover ul { display:block;  }
+
+nav li:hover ul li{ background:#333; margin-left:-30px;  width:100%; }
+nav li:hover ul li a{ color:#ccc;}
+nav li:hover ul li a:hover{background:#555; color:#ccc;}
+
+nav li:hover ul li ul{ display:none;}
+nav li:hover ul li:hover ul{ display:block;}
+
+nav li:hover ul li:hover ul li{ background:#333; margin-left:-20px;  }
+nav li:hover ul li:hover ul li a{ color:#ccc;}
+nav li:hover ul li:hover ul li a:hover{background:#555; color:#ccc;}
+.nav-col-bck{ background:#C1272D; color:#fff;}    
+}
+@media screen and (min-width: 768px)  and (max-width: 1024px)
+{
+
+   	.logo-img1{ margin:0px; float:left; z-index:99999; position:absolute;}
+	.logo-text{ font-size:20px; font-family: Roboto, sans-serif; float:left; position:absolute; color:#a12d33; z-index:99999; margin:2% 0 0 10%; 
+	 text-shadow:1px 1px 2px #000; -webkit- text-shadow:1px 1px 2px #000; -moz- text-shadow:1px 1px 2px #000;}
+	 
+
+    .menu-icon{ float:right; margin:10px;padding:10px 20px; color:#fff; background:#333; cursor:pointer;}
+    #menuToggle{ display:none;}
+    #menuToggle:checked ~ .menu{ position:absolute; top:58px; left:0;}
+
+    .menu{background:#333; width:100%; height:auto; position:absolute; top:-250px; z-index:999999;}
+nav { float:left; width:100%;}
+nav li{ list-style:none; background:#333; width:100%; min-width:320px; margin:auto;  position:relative;  }
+nav li .active{ border-bottom:2px solid #C1272D;}
+nav li a{ display:block; padding:5px;text-decoration:none; margin:auto;  color:#fff;}
+nav li a:hover{  color:#fff;  }
+
+nav li ul{ display:none;}
+nav li:hover ul { display:block;  }
+
+nav li:hover ul li{ background:#333; margin-left:-30px;  width:100%; }
+nav li:hover ul li a{ color:#ccc;}
+nav li:hover ul li a:hover{background:#555; color:#ccc;}
+
+nav li:hover ul li ul{ display:none;}
+nav li:hover ul li:hover ul{ display:block;}
+
+nav li:hover ul li:hover ul li{ background:#333; margin-left:-20px;  }
+nav li:hover ul li:hover ul li a{ color:#ccc;}
+nav li:hover ul li:hover ul li a:hover{background:#555; color:#ccc;}
+.nav-col-bck{ background:#C1272D; color:#fff;}    
+	
+}
+@media screen and (min-width: 1024px)  and (max-width: 5000px)
+{
+   
+	.logo-img1{ margin:10px; float:left; z-index:99999; position:absolute;}
+	.logo-text{ font-size:20px; font-family: Roboto, sans-serif; float:left; position:absolute; color:#fff; z-index:99999; margin:4% 0 0 10%; 
+	 text-shadow:2px 5px 5px #000; -webkit- text-shadow:2px 5px 5px #000; -moz- text-shadow:2px 5px 5px #000;}
+	
+    .menu-icon{ display:none;}#menuToggle{ display:none;}
+nav{ width:58%; height:30px; float:right;  margin:4% 0 0 30%; z-index:99999; position:absolute; background:#fff; padding:5px; }
+nav li{ text-decoration:none; display: inline-table; line-height:20px;}
+nav li a{ padding:0px 9px; color:#333; text-align:center; font-size:16px; font-family: Roboto, sans-serif; }
+nav .active{ border-bottom:2px solid #C1272D;}
+
+/*nav{ width:100%; height:30px;  background:#1296d1; float:left; position:relative; z-index:99999; }*/
+
+/* Menu Style*/
+nav ul {	/*
+	background: #efefef; 
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);*/
+	border-radius: 0px;  	list-style: none;	position: relative;	display: inline-table;}
+nav ul:after {		content: ""; clear: both; display: block;	}
+nav ul li {	float: left;}
+nav ul li:hover {		background: #5675a3; padding:0px 0; box-shadow:1px 2px 1px #000;
+		/*background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);*/
+	}
+nav ul li:hover a {			color: #fff;	 text-decoration:none;	}
+nav ul ul li a {		display: block; padding:10px 10px 5px 10px; text-align:left;	color: #c1272d;	 text-decoration: none;	}
+
+/* Blocking sub menus*/
+nav ul ul {	display: none;}
+nav ul li:hover > ul { display: block;	}
+
+/*Submenu Style*/
+nav ul ul {	background: #333; border-radius: 0px; padding: 0; width:200px;	position: absolute; top: 100%; z-index:99999; color: #c1272d;	}
+nav ul ul li {		float: none; 		border-top: 1px solid #6b727c;	width:200px;	border-bottom: 1px solid #575f6a;		position: relative;	}
+	
+nav ul ul li a:hover {				background: #5675a3;	color:#fff;		}
+
+/*Sub Sub Menu position*/				
+nav ul ul ul{ display:none;}     
+nav ul ul li:hover >ul{ display:block;}
+/*sub sub Submenu Style*/
+nav ul ul ul {	 border-radius: 0px; padding: 0; width:200px;	position: absolute; top: 0px; left:200px; z-index:99999;}
+nav ul ul ul li {		float: none; 		border-top: 1px solid #6b727c;		border-bottom: 1px solid #575f6a;		position: relative;	}
+nav ul ul ul li a {			padding: 5px 20px;			color: #fff;		}	
+nav ul ul ul li a:hover {				background: #fff;	color: #5675a3;		}
+
+} /*-----desktop--------*/
+
+
+
+.foot{ color:#fff; font-family: Roboto, sans-serif;}
+.box1{ padding:2px auto; background:url(../images/bck-trsp.png) repeat; color:#fff;}
+.marg{ margin:10px auto;}

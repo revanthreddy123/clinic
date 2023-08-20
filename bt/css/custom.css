@@ -1,0 +1,246 @@
+/* ==========================================================================
+*
+* Custom CSS Stylesheet. This is where you should add your own styles!
+*
+** ========================================================================== */
+
+/* Simple style overrides or custom adds */
+
+/*** sitemap ***/
+.sitemap ul li {
+    margin: 2px 0 0 30px;
+	list-style-type: unset;
+
+}
+
+.sitemap li ul li  {
+	
+	list-style-type: square;
+	
+}
+.sitemap li ul li ul li  {
+
+	list-style-type: circle;
+}
+/*** sitemap ***/
+
+
+@font-face {
+font-family: 'Gotham Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Gotham Bold'), url('fonts/Gotham-Bold.html') format('woff');
+}
+
+@font-face {
+font-family: 'Gotham Black Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Gotham Black Regular'), url('fonts/Gotham-Black.html') format('woff');
+}
+
+@font-face {
+font-family: 'Gotham Light Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Gotham Light Regular'), url('fonts/Gotham-Light.html') format('woff');
+}
+
+.fa-linkedin{
+	color:#1c73ae;
+}
+.fa-linkedin:hover {
+	color:#000;
+}
+
+.table-overflow {
+	overflow-x:scroll;
+}
+
+.program-desc-title a.active .bf {
+	border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #3c45a5;
+	color:#ffffff;
+}
+.program-desc-title  a.active .bf:hover {
+	color:#ffffff;
+}
+.program-desc-title .bf:hover, .program-desc-title .bf {
+	color:#000;
+}
+
+.fixed {
+	position:fixed;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    animation: slide-down 0.7s;
+}
+.site-logo img {
+	max-height:82px;
+}
+.homectabox{
+	padding: 30px 30px;
+    color: #fff;
+    position: relative;
+    background-color: #CD2122;
+    clear: both;
+}
+.homectabox .ac-btn {
+    margin-right: 20px;
+	font-size:18px;
+}
+.homectabox .ac-btn:last-child {
+    margin-right: 0px;
+}
+.homectabox h4.text {
+    font-size: 1.7rem;
+    line-height: 1.4;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+.homectabox .ac-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+}
+.homectabtns li {
+	display:inline-block;
+	margin:0px 15px;
+}
+
+
+.topnav.topnav--lang .languages .pPanel {min-width: 200px;}
+.main-nav > ul > li > a {
+	font-weight:600;
+}
+
+#footer .contact-details {
+	background:unset!important;
+}
+#footer .bottom {
+	border-top: 0px solid #484848;
+}
+#footer {
+	padding-bottom:0px;
+}
+.fcopy {
+	background-color:#242323;
+}
+.copyright {
+	margin-bottom:30px;
+} 
+
+.implinks p{
+	font-size:14px;
+	color:#8b8c8d;
+}
+
+.kltopbar {
+	height:30px;
+	line-height:30px;
+	border-bottom:1px solid #eaeaea;
+	font-size:14px;
+	font-family:roboto;
+}
+.kltopbar span {
+	color:#ccc;
+}
+
+.recentwork_carousel__link:hover .recentwork_carousel__crsl-title, .recentwork_carousel__link:hover .recentwork_carousel__cat {
+	color:unset;
+}
+
+/* ==========================================================================
+** Responsive styles custom rules
+* These rules are ready to be used for either overrides
+* or just your own custom rules.
+========================================================================== */
+
+
+/** Higher screens+ **/
+@media only screen and (min-width : 1921px){
+
+}
+
+
+/** Desktop+ **/
+@media (min-width: 1200px) {
+
+}
+
+
+/** Laptop **/
+@media (max-width: 1200px) {
+
+}
+
+
+/** Laptop+ **/
+@media (min-width: 991px) {
+
+}
+
+
+/** Laptop **/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+
+/** Large Tablets **/
+@media (max-width: 992px) {
+
+}
+
+
+/** Tablets (landscape mode)  **/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+/** Tablets+  **/
+@media (min-width: 768px) {
+
+}
+
+
+/** Tablets (portrait mode)  **/
+@media (min-width : 481px) and (max-width : 768px) {
+	
+
+
+}
+
+
+/** Smartphone landscape mode / Mini Tablet **/
+@media (max-width: 767px) {
+
+}
+
+
+/** Smartphone landscape mode / Mini Tablet **/
+@media (max-width: 600px) {
+
+}
+
+
+/** Smartphone portrait mode **/
+@media (max-width: 480px) {
+	
+	.homectabtns li {
+		width:100%!important;
+		margin:0px 0px;
+	}
+	.homectabtns li a {
+		width:100%!important;
+	}
+
+}
+
+
+/** Normal phone portrait mode+ **/
+@media (min-width: 320px) {
+	
+	
+}

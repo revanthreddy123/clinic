@@ -1,0 +1,18 @@
+Ã¯Â»Â¿BODY {
+	MARGIN: 0px; BACKGROUND-COLOR: #333333
+}
+.container {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; POSITION: absolute; TOP: 0px; TEXT-ALIGN: center
+}
+.textDesc {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 12px; Z-INDEX: 10; LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: 400px; COLOR: #ffffff; PADDING-TOP: 0px; FONT-FAMILY: verdana, Helvetica, sans-serif; POSITION: absolute; TOP: 380px; HEIGHT: 27px; TEXT-ALIGN: center
+}
+#transbg {
+	Z-INDEX: 9; LEFT: 0px; WIDTH: 600px; POSITION: absolute; TOP: 360px; HEIGHT: 40px; BACKGROUND-COLOR: #495D38
+}
+.nav {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; Z-INDEX: 10; LEFT: 473px; PADDING-BOTTOM: 0px; WIDTH: 164px; PADDING-TOP: 0px; POSITION: absolute; TOP: 370px; HEIGHT: 27px; TEXT-ALIGN: center
+}
+.transparency {
+	FILTER: alpha(opacity: 50); -moz-opacity: 50; opacity: .5
+}

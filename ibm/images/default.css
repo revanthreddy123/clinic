@@ -1,0 +1,382 @@
+﻿/*
+
+	zenlike1.0 by nodethirtythree design
+	http://www.nodethirtythree.com
+
+*/
+
+*
+{
+padding: 0em;
+margin: 0em;
+}
+      
+body
+{
+background: #83c8f9  url(bgmaroon01.html);
+background-attachment:fixed;
+background-repeat:repeat;
+background-position:bottom;
+padding: 35px 0px 35px 0px;
+}
+
+body,input
+{
+font-size: 10pt;
+font-family: "georgia", "times new roman", serif;
+color: #333333;
+}
+h4
+{
+font-size:1.5em;
+font-family:Bookman Old Style, Arial, Helvetica, sans-serif;
+font:bold;
+color:#800000;
+padding:2px 0.2px 2px 0.2px;
+text-transform:uppercase;
+}
+
+p
+{
+line-height:1.5em;
+font: Verdana,Tahoma,Arial,sans-serif;
+padding:2px 2px 2px 5px;
+}
+
+.sideheading
+{
+color:#800000;
+font:bold;
+}
+
+h2{
+font-size:2em;
+color:#4088b8;
+padding:2px 2px 2px 5px;
+margin:0 0 10px 0;
+letter-spacing:-1px;
+}
+
+h3{
+font-size:1.2em;
+font-weight:bold;
+color:#ffffff;
+border-bottom:1px solid #dadada;
+margin:10px 0 8px 0;
+padding:1px 2px 2px 3px;
+}
+
+
+
+
+.quote{
+position:relative;
+color:#000000;
+font: 90% Verdana, Arial, Helvetica, sans-serif;
+text-align:left;
+padding:2px 2px 2px 2px;
+}
+
+.quote b{color:#FF6600; font:100%;}
+.quote h1{color:#FF6600; font:100% bold; text-align:right;}
+
+
+
+
+.box11{
+color:#ffffff;
+font-size:0.8em;
+background-color:#800000;
+border:1px solid #c8c8c8;
+line-height:1em;
+padding:5px 5px 5px 8px;
+}
+
+.box{
+color:#ffffff;
+font-size:0.8em;
+background-color:#fdc689;
+border:1px solid #c8c8c8;
+line-height:0.5em;
+padding:2px 2px 2px 2px;
+}
+
+.box2{
+color:#ffffff;
+font-size:0.8em;
+background-color:#f2ede9;
+border:1px solid #c8c8c8;
+line-height:0.5em;
+padding:2px 2px 2px 2px;
+}
+
+
+.box h2{font-size:1.5em;color:#790000; vertical-align:middle;padding: 10px 0px 0px 0px;}
+
+.leaderbg
+{
+background-position: bottom;
+color:#000000;
+font: 90% Verdana, Arial, Helvetica, sans-serif;
+}
+
+.leaderbg b{color:#0054a6; font:100%;}
+
+
+#vision
+{
+position: relative;
+padding: 0em 0em 0em 0em;
+color:#000000;
+font: 90% Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+#lpart
+{
+position: relative;
+padding: 0em 0em 0em 0em;
+background:#FDF5E6;
+vertical-align:top;
+width:150px;
+}
+
+
+#aboutcontent
+{
+/*position: relative;
+padding: 0em 0em 0em 0em;*/
+color:#000000;
+font: 90% Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+#vision b{color:#FF6600; font:100%;padding:5px 0px 0px 10px;}
+
+#vision p{ padding:5px 20px 0px 10px;}
+
+#vision li{list-style: url(blue_bullet.html) inside; padding: 0px 5px 0px 15px; }
+
+#upbg
+{
+position: relative;
+top: 0px;
+left: 0px;
+width: 100%;
+height:auto;
+background: #ecf5fb url('Stage_BG_btm.html') repeat-x;
+background-position:bottom;
+z-index: 1;
+}
+
+#outer
+{
+z-index: 2;
+position: relative;
+/*
+	The width value below controls the overall width of the design. By default it's set to 82%
+	(so it'll take up 82% of the browser window's width). You can set it to a different percentage
+	value (70%, 90%, etc.) or even a pixel value (760px, 800px, etc.) to enforce a fixed width.
+*/
+width: 970px;
+border: solid 7px #fff;
+background-color: #fff;
+margin: 0 auto;
+}
+
+p
+{
+line-height: 1.5em;
+margin-bottom: 1.0em;
+text-align: justify;
+}
+
+a
+{
+color: #000000;
+text-decoration: none ;
+}
+
+a:hover
+{
+text-decoration: underline;
+}
+
+
+
+
+img.content
+{
+border: solid 1px #6F5230;
+}
+
+img.logo
+{
+border: none;
+}
+
+#header1
+{
+position: relative;
+width: 100%;
+height: 7.0em;
+background: #800000  url(bg12.html); 
+background-repeat:repeat;
+margin-bottom: 2px;
+}
+
+#header
+{
+position: relative;
+width: 100%;
+height: 7.0em;
+background: #692718; 
+background-repeat:repeat;
+margin-bottom: 2px;
+}
+
+
+#content1
+{
+position: relative;
+width: 100%;
+margin-bottom: 2px;
+}
+
+
+#lmenu
+{
+padding: 10px 5px 0px 5px;
+}
+
+#lbr
+{
+padding: 10px 0 0px 0px;
+}
+
+#footer
+{
+position: relative;
+height: 1.0em;
+clear: both;
+padding-top: 2.5em;
+background: #D0CBCA url('border2.html') repeat-x 0em 0em;
+font-size: 0.8em;
+}
+
+#footer .left
+{
+position: relative;
+left: 2.0em;
+right: 2.0em;
+bottom: 0.6em;
+font:100% Verdana, Arial, Helvetica, sans-serif bold;
+text-align:center;
+color:#000000;
+
+}
+
+#footer .right
+{
+position: relative;
+right: 2.0em;
+bottom: 1.2em;
+font:100% Verdana, Arial, Helvetica, sans-serif bold;
+color:#000000;
+
+}
+
+
+
+input.search { width: 122px; height: 15px; border: 1px dotted #FF9C00; background: #FFF; padding: 3px; color: #616161; }
+input.submit { width: 45px; height: 50px; font-weight: bold; border: none; padding: 3px; color: #616161; }
+imput.submit:hover { border:thin #FFFFFF; }
+
+
+
+
+
+
+.imgsd img{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=85);
+-moz-opacity: 0.85;
+background:#999999;
+}
+
+
+.imgsd:hover img{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+-moz-opacity: 1;
+}
+
+.imgsd img{
+border: 2px solid #ccc;
+}
+
+.imgsd:hover img{
+border: 2px solid #aaa;
+}
+
+.imgsd:hover{
+color: red; 
+}
+
+
+
+#headercontent
+{
+position: relative;
+bottom: 0em;
+right:0em;
+left:0em;
+padding: 1.3em 1.0em 0em 1.0em;
+}
+
+#headercontent h1
+{
+font: Arial, Helvetica, sans-serif;
+font-weight: bold;
+color: #fff;
+font-size: 1.5em;
+text-align:left;
+}
+
+
+#headercontent h2
+{
+font-family:"Times New Roman", Times, serif;
+font-size: 1.0em;
+font-weight: bold;
+color: #ffffff;
+text-align:left;
+}
+
+#logo
+{
+position: relative;
+bottom: 0em;
+right:0em;
+padding: 0px 0px 0px 20px;
+text-align:right;
+}
+
+
+
+#menu
+{
+position: relative;
+background: #cbe5f2 ;
+height: 3.em;
+padding: 0em 1.0em 0em 0em;
+margin-bottom: 2px;
+}
+
+
+#menubottom
+{
+background: #fff url('border1.html') repeat-x;
+height: 10px;
+margin-bottom: 0em;
+}
+

@@ -1,0 +1,74 @@
+﻿.back{
+	
+    background-image: url('back5.png'); 
+    background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	background-position: top center 
+}
+.header{
+		width: 980px;margin-left: auto;margin-right: auto;border: 1px gray solid		
+				
+}
+.headback{
+				background-color:#5f100d;
+}
+.sidebar{
+				background-color:#5f100d;vertical-align: top; 
+}
+
+h1{
+	FONT-SIZE: 14px; COLOR: maroon; FONT-FAMILY: Verdana, Arial, sans-serif; font-weight: bold;
+}
+.footer{
+				background-color:#5f100d;color: #ffffff; 
+}
+
+.headline{
+	height:20px; background-color:maroon; color :white;font-size:12px;font-weight: bold ;width:971px;
+}
+body{
+ FONT-SIZE: 12px; MARGIN: 10px; COLOR: #000; FONT-FAMILY: Verdana, Arial, sans-serif;	BACKGROUND-COLOR: #f8f4db;	 text-align:justify;
+}
+A:link{
+	FONT-SIZE: 100%; COLOR: #800000; TEXT-DECORATION: none; font-weight: bold; text-align: left; 
+}
+A:visited {
+	COLOR: #800000; TEXT-DECORATION: none; font-weight: bold; text-align: left; 
+}
+A:hover{
+	COLOR: #800000; TEXT-DECORATION: underline; font-weight: bold; text-align: left; 
+}
+li{
+ margin-top: 10px;margin-bottom: 10px;
+}
+
+#table1
+{
+    border-color: #000;
+    border-width: 0 0 1px 1px;    
+    border-collapse: collapse;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100%;
+}
+
+#table1 td
+{
+    border-color: #000;
+    border-width: 1px 1px 0 0;    
+    border-style: solid;  
+    margin: 0;
+    padding: 3px;
+}
+
+#table1 th
+{
+    border-color: #000;
+    border-width: 1px 1px 0 0;    
+    border-style: solid;  
+    margin: 0;
+    padding: 4px;
+    text-align: center; 
+}
+

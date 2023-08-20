@@ -1,0 +1,105 @@
+body{ background-size:cover;}
+.main
+{
+box-shadow:0 0 5px rgba(0,0,0,0.5);
+border:1px solid #a4a4a0;
+border-width:0 0 1px;
+}
+#logo_bck{ background:url(../img/logo_bck.png) no-repeat; width:100px; height:134px; left:200px; top:1px; position:absolute;}
+
+#logo_bck .img_l{ width:100px;}
+
+#head
+{
+border-radius:5px;
+-webkit-border-radius:5px;	
+z-index:11;
+margin-top:55px;
+margin-left:auto;
+margin-right:auto;
+
+}
+#head_cnt{  padding-top:20px; color:#333; width:100%;margin-top:60px;}
+.left_bar{ top:10px; left:0; position:fixed; width:150px; height:620px; background:#067CB2;}
+#banner
+{
+background:#000;
+left:0;
+margin-top:-130px;
+position:absolute;
+width:100%;
+height:320px;
+top: 300px;
+}
+#banner1{width:100%; height:80px; float:left; margin-top:37px; color:#a12d33; font-size:24px;}
+.gun{ font-family:Gunplay;float:left;}
+.ar{ font-family:Arial, Helvetica, sans-serif;float:left;}
+.guide{ float:left; width:50%; margin:35px 0 0 10px; }
+
+.section
+{
+
+z-index:12;
+width:80%;
+
+margin:300px auto auto auto;
+}
+#section1
+{
+background:#a12d33;
+z-index:12;
+width:230px;
+margin:10px;
+float:left;
+height:300px;
+}
+#section2
+{
+background:#a12d33;
+z-index:12;
+width:230px;
+margin:10px;
+height:300px;
+float:left;
+}
+#section3
+{
+	float:left;
+background:#a12d33;
+z-index:12;
+width:230px;
+margin:10px;
+height:300px;
+}
+#section4
+{
+float:left;
+background:#a12d33;
+z-index:12;
+width:230px;
+margin:10px;
+height:300px;
+}
+.tab_pos{margin-left:-200px;}
+.menu_bar{width:100%; height:30px; float:left; margin-top:10px; background:#067CB2;}
+.menu_bar li{ list-style:none; text-decoration:none; display:inline; padding:5px 7px 0 5px;}
+.menu_bar li a{ color:#fff; list-style:none; text-decoration:none;}
+.menu_bar li a:hover{ background-color:#a12d33; color:#fff; padding:5px; margin-top:5px;}
+.mb_pos{ right:0; position:absolute; top:145px; border:#333 solid 1px;}
+.top_bar1{width:100%; height:130px; float:left; z-index:1; color:#067CB2;}
+.top_img{ width:150px; height:180px; top:2px; left:150px; position:absolute; background:url(../img/log_bck.png) no-repeat; padding:10px 0 0 20px;}
+.logoimg_pos{ }
+
+
+footer{background-color:#a12d33; color:#fff; padding:3px 10px; width:100%; text-align:center; float:left; }
+
+.bck_col{ background:#a12d33;}
+@media (min-width:768px) and (max-width:1024px)
+{
+   #banner{ top:180px;}
+   #banner1{width:100%; height:100px; float:left; margin-top:70px; }
+   .nav1 ul ul 
+    {
+		margin-left:213px;
+    }
+}

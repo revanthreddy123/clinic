@@ -1,0 +1,914 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from www.kluniversity.in/lib/default.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Aug 2023 09:36:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	Library
+</title><link href="css/navbar.css" rel="stylesheet" type="text/css" /><link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,500i,700,900&amp;display=swap" rel="stylesheet" /><link href="css/layout.css" rel="stylesheet" /><link href="css/accordian.css" rel="stylesheet" /> <!--$$$ Accordian Stuff $$$-->
+<link href="css/bootstrap.min.css" rel="stylesheet" />  <!--$$$ Bootstrap 3 Stuff $$$-->
+<style type="text/css">
+
+@-webkit-keyframes blink {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.0;
+    }
+}
+blink {
+    -webkit-animation-name: blink;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
+    -webkit-animation-duration: 1s;
+}
+</style>
+<style>
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
+<script src="../../support.epnet.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    function preProcess(form) {
+        if (form.sourceTypeSelectors.value != "") {
+            form.ebscohostsearchtext.value = form.srchTxt.value + " AND PT " + form.sourceTypeSelectors.value;
+            return true;
+        }
+        else {
+            form.ebscohostsearchtext.value = form.srchTxt.value;
+            return true;
+        }
+    }
+</script>
+
+<style type="text/css">
+        
+        #ebscohostCustomSearchBox #disciplineBlock { width:auto; }
+        #ebscohostCustomSearchBox .limiter { float:left;margin:0;padding:0;width:50%; }
+        
+        .searchBox, .searchSource
+        {
+            background-color: #fff;
+            background-image: linear-gradient(#fff, #F5ECEC);
+            border-radius: 10px;    
+            border-width: 0.1px;
+            border-style: solid;
+            border-color: #D9E0E2;            
+            width: 350px;
+            height: 30px;
+            padding: 0px 5px 2px 5px;
+            margin: 5px auto 5px 5px;
+            overflow: hidden;
+        }
+        @-moz-document url-prefix() {
+            .searchSource
+            {
+                border-radius: 2px;
+            }   
+        }
+        .searchBox:focus
+        {
+            outline: 0;
+            background-image: none;
+        }
+        
+        .searchButton
+        {
+            padding-left: 5px; 
+            font-size: 10pt;
+            height: 30px;
+            width: 80px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #A12D33;
+            background-image: linear-gradient(#A12D33, #9E3A40);
+        }
+        
+        .searchButton:hover
+        {
+            background-color: #A12D33;
+            background-image: linear-gradient(#A12D33, #940E16);
+        }
+        
+        .searchButton:focus
+        {
+            outline: 0;
+        }
+
+        #guidedFieldSelectors
+        {
+            margin-left: 150px;
+            margin-top: 10px;
+            font-style: italic;
+            font-size: 10pt;
+        }
+        
+        #bottomCheckBoxes
+        {
+            font-size: 12pt;
+            margin: 10px 0 20px 10px; 
+            font-style: bold;
+        }
+        
+        .srchBoxTxt
+        {
+            position:relative;
+            font-size:16px;
+            font-weight:bold;
+            margin-left:10px;
+            opacity:0.5;
+        }
+        
+        .bckgrndtitle
+        {
+            position:relative;
+            font-size:18px;
+            font-weight:bold;
+            margin-left: 120px;
+            opacity:0.5;
+        }  
+	.libhead3
+	{
+		font-size: 12px;
+		color: red;
+		font-weight: bold
+
+	}
+
+
+
+</style>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-75134087-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+<script>
+
+
+$(document).ready(function() {
+	$("#search").keypress(function( event ) {
+		if ( event.keyCode == 13 ) {
+			searchFunction();
+			return false;
+		}
+		return true;
+	});
+});
+
+function searchFunction(){
+	var searchInput=$('#search').val();
+	var my_library="";
+	var prof_industry="";
+	var full_text="";
+	
+	if(searchInput==""){
+		alert("Please enter a keyword to search");
+		return false;
+	}
+	url="http://jgateplus.com/search/search/?q="+searchInput+"&reqInitiator=basic&currentContext=myLibrary";
+	window.open(url, '_blank'); 
+}
+</script>
+
+<style>
+#searchBody {
+    border-top: 10px none;
+	border-radius: 8px;
+	height: 83px;
+    padding-left: 2px;
+	padding-top: 6px;
+    text-align: center;
+    width: 310px;
+}
+#search {
+    border-top: 10px none;
+	border-radius: 8px;
+	height: 95px;
+    padding-left: 2px;
+	padding-top: 6px;
+    text-align: left;
+    width: 310px;
+}
+.form-wrapper {
+	height: 45px;
+    width: 355px;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    border-radius: 10px;    
+    background-color: #f6f6f6;
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+	margin:193px 74px -30px 310px;
+}
+
+.form-wrapper #search {
+    /*height: 25px;
+    <!-- padding: 10px 5px; -->
+    float: left;    
+    font: bold 12px "arial";
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #fff;
+    border-radius: 3px;
+	margin-left: 62px;
+	margin-top: 18px;
+    width: 192px;*/
+	height: 31px;
+font: bold 12px "arial";
+border: 1px solid #CCC;
+box-shadow: 0px 1px 1px #DDD inset, 0px 1px 0px #FFF;
+border-radius: 3px;
+margin-left: -29px;
+width: 245px;
+margin-top: 4px;
+}
+
+
+</style>
+
+   
+</head>
+<body>
+<!--=======================================================================================================================================-->
+<div class="navbar navbar-fixed-top navbar-default">
+<nav>
+ <ul class="nav navbar-nav">
+ <li><a href="Default-2.html">Home</a></li>
+ <!--<li><a href="service.aspx">A-Z Services</a></li>-->
+ 
+  
+
+ 
+
+    
+    <li><a href="#">E-Journals</a>
+        <ul>
+        <!-- <li><a href="http://www.nature.com/index.html" target="_blank">Nature Biotechnology</a></li>
+        <li><a href="http://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">IEEE</a></li>
+        <li><a href="http://ascelibrary.org/journals" target="_blank">ASCE</a></li>
+        <li><a href="http://asmedl.org" target="_blank">ASME</a></li>
+        <li><a href="http://link.springer.com" target="_blank">Springer Journals</a></li>
+        <li><a href="http://www.sciencedirect.com" target="_blank">Science Direct </a></li>
+        <li><a href="http://accessengineeringlibrary.com" target="_blank">Mc Graw Hills Access Engg </a></li>
+        <li><a href="http://jgateplus.com/search" target="_blank">J-Gate Engg and Tech </a></li>
+        <li><a href="http://stmjournals.com/index.html" target="_blank">STM Journals </a></li>
+        <li><a href="http://search.ebscohost.com/login.asp" target="_blank">EBSCOHOST Business Source Elite Plus </a></li>
+        <li><a href="http://prowess.cmie.com" target="_blank">CMIE Prowess </a></li>
+        <li><a href="http://search.ebscohost.com/login.asp "target="_blank">EBSCOHOST Hospitality &amp; Tourism </a></li>
+        <li><a href="https://compass.astm.org/CUSTOMERS/index.html"target="_blank">ASTM Digital Library </a></li>
+        <li><a href="http://www.oxfordjournals.org"target="_blank">Oxford University Press </a></li>
+	    <li><a href="http://www.knimbus.com/user/auth.do"target="_blank">Knimbus Federal Search</a></li>
+        <li><a href="http://web.b.ebscohost.com/ehost/search/basic?sid=d48b06d0-a2f9-415e-85ee-352b99a71cfb%40sessionmgr198&vid=1&hid=109"target="_blank">EBSCOHOST Architecture</a></li>
+        <li><a href="http://infotrac.galegroup.com/itweb/kluniv/"target="_blank">Gale Cengage Learning Architecture (GREENR)</a></li>
+	<li><a href="http://www.ingentaconnect.com/content/ben/"target="_blank">Bentham Science</a></li> -->
+
+	<li><a href="http://ascelibrary.org/journals" target="_blank">ASCE</a></li>
+<li><a href="http://asmedigitalcollection.asme.org/" target="_blank">ASME</a></li>
+
+
+<li><a href="https://prowessiq.cmie.com/kommon/bin/sr.php?kall=wprowstat&amp;sectcode=010" target="_blank">CMIE Prowess</a></li>
+<li><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=vth" target="_blank">EBSCO Architecture</a></li>
+<li><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=bsh" target="_blank">EBSCO Business</a></li>
+
+<li><a href="http://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">IEEE</a></li>
+<li><a href="https://jgateplus.com/search/" target="_blank">J-GATE</a></li>
+<!--<li><a href="http://www.lexisnexis.com/in/legal/auth/checkbrowser.do?ipcounter=1&cookieState=0&rand=0.8182503100610433&bhcp=1" target="_blank">Lexis India</a></li>-->
+<li><a href="http://www.manupatrafast.in/pers/Personalized.aspx" target="_blank">Manupatra</a></li>
+
+<li><a href="http://www.nature.com/subscriptions/index.html" target="_blank">Natue Biotechnology</a></li>
+<li><a href="http://www.oxfordjournals.org/en/" target="_blank">Oxford Univ Press</a></li>
+<li><a href="https://advance.lexis.com/in?identityprofileid=79GM8C61429" target="_blank">LexisNexis</a></li>
+
+
+<li><a href="https://www.turnitin.com/login_page.asp?err=3400&amp;lang=en_us" target="_blank">Turnitin</a></li>
+<li><a href="http://164.100.247.26/" target="_blank">DELNET</a></li> 
+<!--<li><a href="https://database.worldlibrary.org" target="_blank">E- Books</a></li>-->
+
+<li><a href="https://www.webofscience.com/wos/woscc/basic-search" target="_blank">Web of Science </a></li>
+<li><a href="https://www.scopus.com/search/form.uri?display=basic#basic" target="_blank">SCOPUS </a></li> 
+
+<li><a href="https://www.eurekaselect.com/" target="_blank">Bentham Science</a></li>
+
+<li><a href="https://link.springer.com/search?facet-content-type=%22Journal%22" target="_blank">Springer</a></li>
+
+<li><a href="https://www.proquest.com/195460" target="_blank">PROQUEST</a></li>
+
+<li><a href="https://www.indiastat.com/Alsosee/NavigatingTheSite" target="_blank">INDIA STAT</a></li>
+
+<li><a href="https://mathscinet.ams.org/mathscinet" target="_blank">Mathscinet</a></li>
+
+<li><a href="https://library.britishcouncil.org.in/cgi-bin/koha/opac-user.pl" target="_blank">British council library </a></li>
+<!--<li><a href="https://open.umn.edu/opentextbooks" target="_blank">Open Access E-Books</a></li>-->
+
+          
+</li>
+        </ul>
+ 
+
+    <li><a href="books.html">E-Books</a></li>
+    <li><a href="pdf/OPEN%20ACCESS%20RESURCES.pdf" target="_blank">Open access Resources</a></li>
+
+
+    <li><a href="http://192.168.2.87/" target="_blank">Institutional Repository</a></li>
+<li><a href="http://ir.kluniversity.in/xmlui/" target="_blank">Previous Question Papers</a></li>
+      <li><a href="pdf/Rare-book-collection.pdf" target="_blank">Rare Books</a></li>
+
+      <li><a href="Alldeptjur.html">Print Journals</a>
+ <li><a href="about.html">Library Staff</a></li>
+   <li><a href="commitee.html">LAC </a></li>
+  <li><a href="pdf/Library%20Manual%202023.pdf" target="_blank">Library Manual </a></li>
+  <li><a href="https://library.kluniversity.in/" target="_blank">OPAC</a></li>
+   <li><a href="Resources.html">Resources</a></li>
+
+   
+
+    <li><a href="sections.html">Sections</a>
+      <ul>
+      <!--<li><a href="newarriv.aspx">Current journals list department wise</a></li>-->
+     </ul>
+       </li>
+
+    <li><a href="#">Video Lectures</a>
+        <ul>
+       <!-- <li><a href="bme.aspx">KLEF BME Classroom Assistant</a></li>-->
+         <!--<li><a href="lenso.aspx">LENSOO IUCEE </a></li>-->
+          <li><a href="ntpel.html" target="_blank">NPTEL </a></li>
+          <li><a href="https://swayam.gov.in/"target="_blank">SWAYAM</a></li>
+          <li><a href="http://ocw.mit.edu/courses/audio-video-courses" target="_blank">MIT </a></li>
+          
+        <li><a href="uw.html">KLEF WISE </a></li>
+        <li><a href="sw.html">SUBJECT WISE </a></li>
+     
+        <!--<li><a href="sonet1.aspx">SONET</a></li>-->
+       
+       
+       
+        </ul>
+    </li>
+
+    
+  
+    <!--<li><a href="#">Reports</a></li>
+    <li><a href="downloads.aspx">Downloads</a></li>-->
+
+   
+    
+    
+    <li><a href="PDF/FAQs.pdf"target="_blank">FAQ</a></li>
+    <li><a href="Ask-the-Librarian.html">Ask the Librarian</a></li>
+      <li><a href="pdf/Library%20Brochure.pdf" target="_blank"> Library Broucher</a></li>
+      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf5X2ilP5pXOt07thdKyqL2CERVOmZe4PSVNnhLDx-qJDI_zA/viewform" tarrget="_blank">Feed Back Form</a></li>
+   
+   
+      
+       
+
+</nav>           
+</div>
+<!--=======================================================================================================================================-->
+<div class="container">
+<!--==============Container====================-->        
+<div id="banner1">
+	<div class="row">
+		<div class="col-md-4">
+            <a href="../default.html"><img src="img/KL-logo.png" class="img-responsive" style="margin-top:20px;"> </a>
+	    </div>
+        <div class="col-md-6">
+        	<img src="img/cltitle.png" class="img-responsive" style="margin-top:10px;">
+        </div>
+        <div class="col-md-2">
+        	<img src="img/res_logo.png" class="img-responsive">
+        </div>
+     </div>
+</div>
+</div>
+
+<br />
+     <br /> <br />  
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Composer -->
+    <!-- Source: https://www.jssor.com/demos/banner-slider.slider/=edit -->
+    <script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function () {
+
+            var jssor_1_SlideshowTransitions = [
+              { $Duration: 800, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+              { $Duration: 800, x: 0.3, $SlideOut: true, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 }
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: 1,
+                $SlideshowOptions: {
+                    $Class: $JssorSlideshowRunner$,
+                    $Transitions: jssor_1_SlideshowTransitions,
+                    $TransitionsOrder: 1
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $ThumbnailNavigatorOptions: {
+                    $Class: $JssorThumbnailNavigator$,
+                    $Orientation: 2,
+                    $NoDrag: true
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .jssora061 {display:block;position:absolute;cursor:pointer;}
+        .jssora061 .a {fill:none;stroke:#fff;stroke-width:360;stroke-linecap:round;}
+        .jssora061:hover {opacity:.8;}
+        .jssora061.jssora061dn {opacity:.5;}
+        .jssora061.jssora061ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/1new.png" />
+                <div u="thumb">
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/2new.png" />
+                <div u="thumb">
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/img-new.png" />
+                <div u="thumb">
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/3new.png" />
+                <div u="thumb">
+                </div>
+            </div>
+            
+        </div><a data-scale="0" href="https://www.jssor.com/" style="display:none;position:absolute;">image gallery</a>
+        <!-- Thumbnail Navigator -->
+        <div u="thumbnavigator" style="position:absolute;bottom:0px;left:0px;width:980px;height:50px;color:#FFF;overflow:hidden;cursor:default;background-color:rgba(0,0,0,0);">
+            <div u="slides">
+                <div u="prototype" style="position:absolute;top:0;left:0;width:980px;height:50px;">
+                    <div u="thumbnailtemplate" style="position:absolute;top:0;left:0;width:100%;height:100%;font-family:arial,helvetica,verdana;font-weight:normal;line-height:50px;font-size:16px;padding-left:10px;box-sizing:border-box;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora061" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <path class="a" d="M11949,1919L5964.9,7771.7c-127.9,125.5-127.9,329.1,0,454.9L11949,14079"></path>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora061" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <path class="a" d="M5869,1919l5984.1,5852.7c127.9,125.5,127.9,329.1,0,454.9L5869,14079"></path>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">        jssor_1_slider_init();
+    </script>
+    <!-- #endregion Jssor Slider End -->
+
+    </div>
+</br></br>
+
+<h3 align="center"> <a href="pdf/glance.pdf" target="_blank">At a Glance </a></h3>
+
+
+<div id="head_cnt">
+<div class="container">
+<!--==============Container====================-->  
+<div class="row">
+	<div class="col-md-3">
+    	<div class="navbar navbar-default">
+        <div class="nav1">
+        	<ul class="nav">
+
+            <li><a href="#">Academic Conferences</a>
+                <ul>
+                <li><a href="http://www.conferencealerts.com/" target="_blank">World Wide</a></li>
+                <li><a href="http://www.conferencealerts.com/country-listing?country=India" target="_blank">India </a></li>
+                </ul>
+            </li>
+            
+              <li><a href="database.html">Bibliographic Database </a></li>
+                
+                        
+            
+            <li><a href="#">College of Law - Resources</a>
+                <ul>
+                        
+                        <li><a href="http://103.206.105.72:9000/" target="_blank">Books -OPAC</a></li>
+                        <li><a href="pdf/College%20of%20LAW.pdf" target="_blank">Print Journals</a></li>
+                        <li><a href="ejs.html">E-Journals (Subscribed by KLEF)</a></li>
+                        
+                        <li><a href="a%20to%20z.html">A – Z Law Databases</a></li>
+                       
+                        <li><a href="rlinks.html">Related Links</a></li>
+                        <li><a href="re.html">Web Sources </a></li>
+                        
+                   </ul>    
+                   
+            </li>
+			
+          
+			
+			<li><a href="department.html">Department Libraries</a></li>
+			
+		
+	              <li><a href="open.html">Open Acess E-Journals</a></li>  
+                      <li><a href="https://open.umn.edu/opentextbooks" target="_blank">Open Access E-Books</a></li>               
+              <li><a href="services.html">Library Services</a></li>
+			<!--<li><a href="#">Institutional Member</a>
+                <ul>
+                <li><a href="http://delnet.nic.in" target="_blank">DELNET</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="services.aspx">Library Services</a>
+                <!--<ul>
+                        
+                        <li><a href="circulation.aspx">Circulation</a></li>
+                        <li><a href="libraryloan.aspx">Inter Library Loan</a></li>
+                        <li><a href="reference.aspx">Reference</a></li>
+                        <li><a href="photocopy.aspx">Photocopying</a></li>
+                        <li><a href="awareness.aspx">User Awareness</a></li>
+                        <li><a href="bookbank.aspx">Current Awareness</a></li>
+                        <li><a href="recentadd.aspx">Recent Additions </a></li>
+                        <li><a href="services.aspx">General</a></li>
+                       
+                   </ul>-->
+           
+            
+            
+            <!--<li><a href="open.aspx">Open Acess E-Journals</a></li>
+            
+             -->           
+            
+           <!-- <li><a href="http://192.168.2.87/handle/123456789/22626">Previous Question Papers</a></li>-->
+            
+            <li><a href="theses.html">Theses and Dissertations ​</a></li>
+            <li><a href="digital.html">Library Rules</a></li>
+             
+             
+            
+                </ul>
+              
+           </div><!--nav-->
+        </div>
+    </div>
+    
+        <div class="col-md-9">    
+            <div class="row">
+<div class="col-md-12 text-justify">
+
+<div class="row">
+    <div class="col-md-12">
+    <!--<h3 style="text-align:center"><a href="pdf/conf.pdf" target="_blank">One Day National Workshop on The Art of Publishing, Writing of Thesis and Project Proposal on 23-04-2016</a></h3>-->
+<center>
+    <!--<h3>E-Journals Search</h3>
+    <!--<iframe src='http://www.knimbus.com/user/loadThirdPartySearch.do?searchSecurityKey=dfe0e2e0-610c-1031-9f17-6b00863ffe4e' frameborder='0' scrolling='no' height='58' width='100%'></iframe> -->
+<!--<iframe src='//www.knimbus.com/user/loadThirdPartySearch.do?searchSecurityKey=dfe0e2e0-610c-1031-9f17-6b00863ffe4e' frameborder='0' scrolling='no' height='58' width='446'></iframe> <br/><br/>
+<div align=centre id="searchBody">
+<div>
+	<div class="row1" style="width: 100%;margin-left: -109%;margin-top: -65%;">
+		
+		<div class="form-wrapper">
+		
+		<table>
+			<tr>
+			<td> 
+			<img style = "margin-top: -1px;" src="#"> 
+			</td>
+			
+			
+				<td>
+					<input type="text" id="search" placeholder="Search-in-Journals"/>
+				</td>
+				<td>
+					<!-- <input type="submit" value="" id="submit" onclick="searchFunction()"> 
+					<div id="submit" onclick="searchFunction()">
+						<img style = "width: 100px;height: 35px; margin-top: -4px;" src="img/jsearch3.png"> 
+					</div>
+				</td>
+			</tr>
+		</table>
+		</div>
+	</div>-->	
+	<!--<div class="row1"  style = "width: 100%;margin-left: -109%;margin-top: 1%;">
+	
+	<span style="font-size:13px;" class="searchBoxText">
+			<a href="http://jgateplus.com/search/journalFinder//?currentContext=myLibrary&allSub=true" target="_blank">Browse Journals A-Z</a>
+			
+		</span>
+	</div>-->
+	
+</div>	
+</div>
+</center>
+</div>
+</div>
+
+<div class="row">
+    <!--<div class="col-md-12">
+    <h1 style="text-align:center; font-size:20px"><a href="ebooks.aspx">E-Books Search</a></h1>
+</div>-->
+
+<div class="row">
+    <div class="col-md-12">
+    <h1 style="text-align:center; font-size:20px"><a href="https://klef.knimbus.com/user#/home" target="_blank">E-Resources: On-Campus / Off-Campus</a>  <a href="pdf/Quick.pdf" target="_blank"><img src="img/blink.gif" />  (Quick Guide)</a></h1>
+</div>
+
+
+    
+</div>
+
+
+<!--<h3>Welcome to the Library</h3>-->
+
+</div>
+<!---<div class="col-md-5"><img src="img/libraryblock.jpg" class="img-thumbnail" /></div>-->
+
+<div class="row"><div class="col-md-12">
+<p>The Central Library had its humble early stages as the college of Koneru Lakshmaiah College of Engineering (KLEF) established in 1981-82. The new building is constructed as a greenhouse with natural sunlight inside the library.</p>
+<p> The  Central Library holds a large number of documents and is enriched with more than 1,90,000 books and 32,000 non-book materials including well-reputed databases.  It holds materials relevant to the Engineering, Science, and Humanities courses and includes Agricultural Engineering, Pharmacy, Architecture, Law, and specialized books and journals.</p>
+<p>A new building has been facilitated on par with international standards with modern facilities.  The Library is centralized Air Conditioned for providing library users comfortable experience of reading and learning. The Central Library is proud to share that it is fully automated using KOHA open source software and RFID technology. Patrons can access the subscribed E-resources by using KLEF E-Library Mobile APP.
+</p>
+<p>More than 1000 users can accommodate and enjoy learning and reading facilities in the study rooms, discussion rooms, and open reading hall</p>
+
+
+</div>
+</div>
+<div class=""row">
+<div class="col-md-4">
+<h5><strong>Ground Floor</strong></h5>
+<ul>
+	<li>	Reception</li>
+<li>	Circulation Help Desk </li>
+<li>	Self Service Kiosk for Check-in/Check-out items</li>
+<li>	WEB OPAC stations</li>
+<li>	Returning Book Sorting Area</li>
+<li>	Newspapers section</li>
+<li>	Reading Hall</li>
+<li>	Books Stack Area- I 
+</li>
+</ul>
+
+</div>
+<div class="col-md-4">
+<h5><strong>First Floor</strong></h5>
+<ul type="disc">
+<li>	Librarian Office </li>
+<li>	Periodical section</li>
+<li>	Asst. Librarian Office (Periodicals)</li>
+<li>	Reprography Room</li>
+<li>	Discussion Rooms</li>
+<li>	Reading Area</li>
+<li>	Books Stack Area- II 
+</li>
+</ul>
+</div>
+<div class="col-md-4">
+<h5><strong>Second Floor</strong></h5>
+<ul type="disc">
+<li>Digital Library</li>
+	
+<li>	Media Resource Centre </li>
+<li>	Conference Room </li>
+<li>	Reference Section</li>
+<li>	Book Bank Section</li>
+<li>	Back Volumes</li>
+<li>	Project Reports</li>
+<li>	Research Wing</li>
+<li>	Books Stack Area- III</li>
+<li>	Discussion rooms (5)</li>
+<li>	Reading Area 
+</li>
+</ul>
+</div>
+
+
+
+
+</div>
+        </div>
+   
+
+
+
+
+
+
+
+
+<!--==============Container====================-->
+</div>
+
+
+
+<div class="container">
+
+<div class="row">
+<div class="col-md-3">
+
+
+
+
+</div>
+<div class="col-md-1">
+
+<h4 style="background-color:#a51c24;;border:1px;padding:11px;  color: #ffffff;width:78px;height:60px;"><B>Visitor Count</B></h4>
+
+
+</div>
+
+<div class="col-md-7">
+
+
+
+<div class="main_container">
+
+<b><div class="num_tiles" id="CounterVisitor"></b>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+</div>
+<script>
+var n = localStorage.getItem('on_load_counter');
+
+if (n === null) {
+  n = 0;
+}
+n++;
+
+localStorage.setItem("on_load_counter", n);
+
+nums = n.toString().split('').map(Number);
+document.getElementById('CounterVisitor').innerHTML = '14,28,48';
+
+for (var i of nums) {
+  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i+ '</span>';
+}
+
+</script>
+
+</div>
+</div>
+<style>
+
+
+.main_container {
+  height: 70px;
+  width: auto;
+  padding: 3px;
+  margin: 2px;
+  max-width: 257px;
+  background-color: #a51c24;
+  align-content: center;
+}
+.container_inner {
+  height: auto;
+  border: none;
+  background-color: #555555;
+  max-width: 290px;
+  vertical-align: center;
+  padding-top: 49px;
+  padding-left: 10px;
+  align-content: center;
+}
+ .num_tiles {
+    width: 140px;
+    height: 30px;
+    color: #ffffff;
+    font-size: 37px;
+    text-align: center;
+    line-height: 59px;
+    padding-left: 50px;
+    margin: 1.5px;
+    font: src: url(font/digital-7.html);
+    vertical-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<footer><h5>&copy;Copyright Reserved By KLEF</h5></footer>
+<!--=======================================================================================================================================-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+<!--=======================================================================================================================================-->
+</body>
+<br/>
+
+<!-- Mirrored from www.kluniversity.in/lib/default.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Aug 2023 09:36:38 GMT -->
+</html>
