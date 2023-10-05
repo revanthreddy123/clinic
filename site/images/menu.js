@@ -32,9 +32,9 @@ stm_aix("p0i4", "p0i0", [0, "PEOs,POs & PSOs", "", "", -1, -1, 0, "pdfs/ENGG-and
 
 stm_aix("p0i2","p0i0",[0,"Model Course Handout","","",-1,-1,0,"handout.htm"]);
 /*stm_aix("p0i2","p0i0",[0,"Open Electives for B.Tech Students","","",-1,-1,0,"openel.htm"]);*/
-stm_aix("p0i3","p0i0",[0,"Our Faculty","","",-1,-1,0,"../faculty.aspx"]);
+
 /*stm_aix("p0i4","p0i0",[0,"Our Team","","",-1,-1,0,"ourteam.htm"]);*/
-stm_aix("p0i1","p0i0",[0,"Practice School","","",-1,-1,0,"../ips/default.aspx"]);
+stm_aix("p0i1","p0i0",[0,"Apply for Transcripts","","",-1,-1,0,"../ips/default.aspx"]);
 stm_aix("p0i1","p0i0",[0,"Evaluation Process","","",-1,-1,0,"teach-eval.htm"]);
 stm_aix("p0i2", "p0i0", [0, "Programmes Offered", "", "", -1, -1, 0, "pdfs/ENGG-and-Non-ENGG-Programs-offered.pdf"]);
 
